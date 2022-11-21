@@ -1,6 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:drawables="clr-namespace:GraphingClass"
              x:Class="GraphingClass.MainPage">
 
+    <ContentPage.Resources>
+        <drawables:LineDrawable X:Key="lineDrawable"/>  
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <GraphicsView Drawable="{StaticResource lineDrawable}"
+                      x:Name="LineGraphView"
+                      HeightRequest="1000"
+                      WidthRequest="1100">
+    </VerticalStackLayout>
+    
 </ContentPage>
