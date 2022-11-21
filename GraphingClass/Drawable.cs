@@ -49,9 +49,8 @@ namespace GraphingClass
                 lineGraph.Xaxis++;
                 return;
             }
-            else if(lineGraph.Yaxis < 1000)
-            {
-                lineGraph.pointArray[lineGraph.Xaxis] = lineGraph.Yaxis;
+            else if(lineGraph.Xaxis < 1000)
+            {                lineGraph.pointArray[lineGraph.Xaxis] = lineGraph.Yaxis;
                 lineGraph.Xaxis++;
             }
             else
@@ -63,7 +62,7 @@ namespace GraphingClass
                 }  
                 lineGraph.pointArray[999] = lineGraph.Yaxis;
             }                
-            for(int i= 0; i< lineGraphs.Ya -1; i++)        //Xaxis -1 to make sure we do not go past the end point
+            for(int i= 0; i< lineGraph.Xaxis -1; i++)        //Xaxis -1 to make sure we do not go past the end point
                 {
                     canvas.StrokeColor = lineGraph.lineColor;
                     canvas.StrokeSize = lineGraph.lineSize;

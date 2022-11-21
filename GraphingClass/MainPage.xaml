@@ -5,13 +5,13 @@
              x:Class="GraphingClass.MainPage">
 
     <ContentPage.Resources>
-        <drawables:LineDrawable X:Key="lineDrawable"/>  
+        <drawables:LineDrawable x:Key="lineDrawable"/>  
     </ContentPage.Resources>
     <VerticalStackLayout>
         <GraphicsView Drawable="{StaticResource lineDrawable}"
                       x:Name="LineGraphView"
                       HeightRequest="1000"
-                      WidthRequest="1100">
+                      WidthRequest="1100"/>
     </VerticalStackLayout>
     
 </ContentPage>
